@@ -19,7 +19,10 @@ chrome.tabs.onActivated.addListener( function(activeInfo){
 
 chrome.tabs.onUpdated.addListener((tabId, change, tab) => {
     if (tab.active && change.url) {
-        console.log("you are here: "+change.url);
-         
+        console.log("you are here: "+ change.url);
     }
 });
+
+chrome.runtime.onStartup.addListener(function() {
+    console.log('open');
+  });

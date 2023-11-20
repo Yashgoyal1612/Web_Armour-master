@@ -18,7 +18,7 @@
 	"permissions": [
     	"tabs", "storage", "commands", "activeTab", "nativeMessaging"
 		],	
-
+    "host_permissions": ["https://www.ipqualityscore.com/api/json/url/*"],
   "icons":
   {
      

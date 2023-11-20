@@ -1,3 +1,4 @@
+// const { url } = require("inspector");
 
 // var initialStage = 1;
 var score = 0;
@@ -56,10 +57,14 @@ async function isRedirectingToAnotherDomain(url) {
   }
   
 
-function main() {
-  
-  
+function main(url) {
+  if(API_KEY == ''){
+    checkLongURL(url , 50);
+    checkShortURL(url);
+  }
 }
+
+main();
 
 
 
